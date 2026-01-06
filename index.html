@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Photography</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f0f0f;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f5c36a;
+}
+
+.search {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f5c36a;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+  background: linear-gradient(to bottom, #121212, #0f0f0f);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #f5c36a;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #bbb;
+}
+
+section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* About & Contact */
+.about,
+.contact {
+  background: #161616;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about h2,
+.contact h2,
+.gallery h2 {
+  margin-bottom: 1.5rem;
+  color: #f5c36a;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Gallery */
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.photo-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-8px);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.photo-card h3 {
+  margin-top: 0.8rem;
+  text-align: center;
+  color: #fff;
+}
+
+.photo-card p {
+  padding: 0 1rem 1rem;
+  color: #aaa;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  color: #ccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background: #f5c36a;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background: #d4a24a;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #000;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+</style>
+   
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">John Photo</div>
+      <input type="text" placeholder="Search photos..." class="search" />
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <h1>Capturing Life Through the Lens</h1>
+      <p>Portraits, Landscapes, and Emotions Frozen in Time</p>
+    </header>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m John, a creative photographer with 7+ years of experience in
+        nature, people, and candid photography. My mission is to tell emotional
+        stories through light and lens.
+      </p>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-flex">
+        <div class="photo-card">
+          <img src="https://picsum.photos/id/1018/400/250" alt="" />
+          <h3>Mountain Hike</h3>
+          <p>Peaceful morning view on a trail.</p>
+        </div>
+        <div class="photo-card">
+          <img src="https://picsum.photos/id/1015/400/250" alt="" />
+          <h3>Sunset Drive</h3>
+          <p>Golden light over the highway.</p>
+        </div>
+        <div class="photo-card">
+          <img src="https://picsum.photos/id/1035/400/250" alt="" />
+          <h3>Smile in Frame</h3>
+          <p>Capturing a joyful moment.</p>
+        </div>
+        <div class="photo-card">
+          <img src="https://picsum.photos/id/1041/400/250" alt="" />
+          <h3>Nature's Silence</h3>
+          <p>Tranquil lake in the forest.</p>
+        </div>
+        <div class="photo-card">
+          <img src="https://picsum.photos/id/1062/400/250" alt="" />
+          <h3>Street Vibe</h3>
+          <p>Raw emotions from city corners.</p>
+        </div>
+        <div class="photo-card">
+          <img src="https://picsum.photos/id/1080/400/250" alt="" />
+          <h3>Golden Hour</h3>
+          <p>Last light before dusk falls.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 John Photography. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
